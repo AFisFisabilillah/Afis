@@ -117,3 +117,12 @@ foto.forEach(function(foto){
 zoomClose.addEventListener("click", e=>{
   zoom.classList.remove("zoom-active")
 })
+
+//Menu item 
+const menus = document.querySelectorAll(".menu-item")
+
+menus.forEach(function(menu){
+  menu.addEventListener("click",function(){
+    sidebar.classList.remove("active")
+  })
+})

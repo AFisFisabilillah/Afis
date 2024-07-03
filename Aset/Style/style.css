@@ -142,6 +142,11 @@ body{
   cursor: pointer;
   transition:0.3s;
   display: none;
+  
+}
+.navbar .ush {
+  display: block;
+  margin-top: -.62rem;
 }
 .nav-active{
   opacity: 0.6;
