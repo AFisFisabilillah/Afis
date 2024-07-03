@@ -29,7 +29,14 @@ function scrollMarkAnimation(){
   let resumeAnimasi = document.querySelectorAll(".resume-line-animation")
   
   //MARK
-  
+  mark.forEach(function(mark){
+    let jarakAtasElement = mark.getBoundingClientRect().top
+    if(jarakAtasElement<tinggiLayar-100){
+      mark.classList.add("mark-active")
+    }else if(jarakAtasElement > tinggiLayar){
+      mark.classList.remove("mark-active")
+    }
+  })
     
   //fadeuo
   fadeUp.forEach(function(fadeUp){
