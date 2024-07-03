@@ -29,30 +29,8 @@ function scrollMarkAnimation(){
   let resumeAnimasi = document.querySelectorAll(".resume-line-animation")
   
   //MARK
-  mark.forEach(function(mark){
-    let jarakAtasElement = mark.getBoundingClientRect().top
-    if(jarakAtasElement<tinggiLayar-100){
-      setTimeout(function(){
-      mark.classList.add("mark-active")
-      },350)
-      
-    }else{
-      mark.classList.remove("mark-active")
-    }
+  
     
-    //mark in menu
-    const menuItem = document.querySelectorAll(".menu-item a")
-    
-    console.log(mark.id)
-    menuItem.forEach(function(menu){
-      if(menu.getAttribute("href") == ("#"+mark.parentElement.parentElement.id)){
-        console.log(menu.getAttribute("href"))
-        menu.style.color = "#37B7C3"
-      }else{
-        menu.style.color = "var(--second)"
-      }
-    })
-  })
   //fadeuo
   fadeUp.forEach(function(fadeUp){
     let jarakAtasElement = fadeUp.getBoundingClientRect().top
